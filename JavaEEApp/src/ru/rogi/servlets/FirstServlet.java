@@ -1,3 +1,5 @@
+package ru.rogi.servlets;
+
 import javax.servlet.RequestDispatcher;
 import javax.servlet.ServletException;
 import javax.servlet.http.HttpServlet;
@@ -13,8 +15,6 @@ public class FirstServlet extends HttpServlet {
     }
 
     protected void doGet(HttpServletRequest request, HttpServletResponse response) throws ServletException, IOException {
-
-
         HttpSession session = request.getSession();
         Integer enterCount = (Integer) session.getAttribute("count");
         if (enterCount == null){
@@ -24,11 +24,11 @@ public class FirstServlet extends HttpServlet {
             session.setAttribute("count", ++enterCount);
         }
 
+
         String name = request.getParameter("name");
         String surname = request.getParameter("surname");
         PrintWriter printWriter = response.getWriter();
         printWriter.println("<html>\n<h1>Hello, "  + name + " " + surname + ", today you entered: " + enterCount + " times " +  "<h1>\n</html>");
-
 /*        response.sendRedirect("https://www.google.com");
         response.sendRedirect("/firstJsp.jsp");
         response.sendRedirect("/test-jsp" + "?name=" + name +"&" + "surname=" + surname);*/

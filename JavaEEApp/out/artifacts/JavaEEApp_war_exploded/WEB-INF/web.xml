@@ -5,11 +5,20 @@
          version="4.0">
     <servlet>
         <servlet-name>FirstServlet</servlet-name>
-        <servlet-class>FirstServlet</servlet-class>
+        <servlet-class>ru.rogi.servlets.FirstServlet</servlet-class>
     </servlet>
     <servlet-mapping>
         <servlet-name>FirstServlet</servlet-name>
         <url-pattern>/test-servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CartServlet</servlet-name>
+        <servlet-class>ru.rogi.servlets.CartServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartServlet</servlet-name>
+        <url-pattern>/cart-servlet</url-pattern>
     </servlet-mapping>
 
     <servlet>
@@ -20,4 +29,14 @@
         <servlet-name>FirstJSP</servlet-name>
         <url-pattern>/test-jsp</url-pattern>
     </servlet-mapping>
+
+    <servlet>
+        <servlet-name>CartJSP</servlet-name>
+        <jsp-file>/cartJsp.jsp</jsp-file>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CartJSP</servlet-name>
+        <url-pattern>/cart-jsp</url-pattern>
+    </servlet-mapping>
+
 </web-app>
