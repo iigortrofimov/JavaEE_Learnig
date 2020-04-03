@@ -14,18 +14,20 @@
 <body>
     <h1>Testing JSP</h1>
     <p>
-        <% Date now = new Date();
-            String str = "Time is " + now;
+        <%
+            Date date = new Date();
+            String timeStr = "Time is " + date;
             TestClass testClass = new TestClass();
+            String name = request.getParameter("name");
+            String surname = request.getParameter("surname");
         %>
 
-        <%= "<p>" +  str  + "</p>" +
+        <%=
+                "<p>" + "Hello, " + name + " " + surname + "</p>" +
+                "<p>" +  timeStr  + "</p>" +
                 "<p>" + testClass.info() + "</p>"
         %>
 
-        <% for (int i = 0; i < 10; i++) {
-            out.println("<p>" + "Number: " + i + "</p>"); }
-        %>
     </p>
 </body>
 </html>
