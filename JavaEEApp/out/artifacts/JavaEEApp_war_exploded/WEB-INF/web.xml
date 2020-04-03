@@ -34,9 +34,39 @@
         <servlet-name>CartJSP</servlet-name>
         <jsp-file>/cartJsp.jsp</jsp-file>
     </servlet>
+
     <servlet-mapping>
         <servlet-name>CartJSP</servlet-name>
         <url-pattern>/cart-jsp</url-pattern>
     </servlet-mapping>
+
+
+    <servlet>
+        <servlet-name>CreateCookiesServlet</servlet-name>
+        <servlet-class>ru.rogi.servlets.CreateCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>CreateCookiesServlet</servlet-name>
+        <url-pattern>/create-cookies-servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <servlet-class>ru.rogi.servlets.GetCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>GetCookiesServlet</servlet-name>
+        <url-pattern>/get-cookies-servlet</url-pattern>
+    </servlet-mapping>
+
+    <servlet>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <servlet-class>ru.rogi.servlets.DeleteCookiesServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>DeleteCookiesServlet</servlet-name>
+        <url-pattern>/delete-cookies-servlet</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
