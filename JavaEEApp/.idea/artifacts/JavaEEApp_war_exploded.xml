@@ -1,0 +1,16 @@
+<component name="ArtifactManager">
+  <artifact type="exploded-war" name="JavaEEApp:war exploded">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaEEApp_war_exploded</output-path>
+    <root id="root">
+      <element id="javaee-facet-resources" facet="JavaEEApp/web/Web" />
+      <element id="directory" name="WEB-INF">
+        <element id="directory" name="classes">
+          <element id="module-output" name="JavaEEApp" />
+        </element>
+        <element id="directory" name="lib">
+          <element id="file-copy" path="$USER_HOME$/Desktop/mysql-connector-java-8.0.19.jar" />
+        </element>
+      </element>
+    </root>
+  </artifact>
+</component>

@@ -1,0 +1,9 @@
+<component name="ArtifactManager">
+  <artifact type="jar" name="JavaEEApp:jar">
+    <output-path>$PROJECT_DIR$/out/artifacts/JavaEEApp_jar</output-path>
+    <root id="archive" name="JavaEEApp.jar">
+      <element id="module-output" name="JavaEEApp" />
+      <element id="extracted-dir" path="$USER_HOME$/Desktop/mysql-connector-java-8.0.19.jar" path-in-jar="/" />
+    </root>
+  </artifact>
+</component>
