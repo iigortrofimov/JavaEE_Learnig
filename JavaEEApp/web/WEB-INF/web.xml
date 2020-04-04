@@ -68,5 +68,14 @@
         <url-pattern>/delete-cookies-servlet</url-pattern>
     </servlet-mapping>
 
+    <servlet>
+        <servlet-name>BooksServlet</servlet-name>
+        <servlet-class>ru.rogi.servlets.BooksServlet</servlet-class>
+    </servlet>
+    <servlet-mapping>
+        <servlet-name>BooksServlet</servlet-name>
+        <url-pattern>/books-servlet</url-pattern>
+    </servlet-mapping>
+
 
 </web-app>
